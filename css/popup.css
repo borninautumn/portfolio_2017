@@ -1,0 +1,101 @@
+.popup-slider {
+	position: fixed;
+	top: 0; bottom: 0; left: 50%;
+	transform: translateX(-50%);
+	width: 1200px;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: none;
+	box-shadow: 0px 10px 5px black;
+	z-index: 9999;
+	overflow-x: hidden;
+}
+
+.popup-slider .popup-wrap {
+	position: absolute;
+	top: 0; bottom: 0;
+	width: 100000px;
+	overflow: auto;
+    background-color: #353239;
+}
+
+.popup-wrap .popup {
+	width: 1200px;
+	height: inherit;
+	float: left;
+}
+
+/*
+popup btn prev, next
+*/
+.popup-prev, .popup-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	opacity: 0.5;
+	display: none;
+	transition: all 0.5s;
+}
+
+.popup-prev {
+	left: 0;
+}
+
+.popup-next {
+	right: 0;
+}
+
+.popup-prev img, .popup-next img {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.popup-prev:hover {
+	opacity: 1;
+}
+
+.popup-next:hover {
+	opacity: 1;
+}
+
+/*
+popup btn close
+*/
+.popup-slider .close {
+	position: absolute;
+	top: 20px; right: 0;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+	opacity: 0.5;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.popup-slider .close img {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.close:hover {
+	opacity: 1;
+}
+
+/*
+popup link
+*/
+.popup-slider .link {
+    position: absolute;
+    bottom: 125px; right: 130px;
+}
+
+.popup-slider .link a {
+    display: block;
+    text-indent: -999999px;
+    width: 100px; height: 35px;
+}

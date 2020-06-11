@@ -1,0 +1,48 @@
+
+/*
+bg, drawer
+*/
+
+.bg-wrap {
+	position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+
+.drawer {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 100%;
+    background-color: rgba(207, 207, 207, 1);
+    transform: translateX(100%);
+	transition: all 0.5s;
+    z-index: 998;
+}
+
+.drawer-on {
+    transform: translateX(0);
+}
+
+.drawer .dmenu-wrap {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.drawer .dmenu-wrap .dmenu {
+    cursor: pointer;
+    font-size: 72px;
+    color: #515151;
+    transition: all 0.4s;
+}
+
+.drawer .dmenu-wrap .dmenu:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.remote-sel {
+    color: #fff;
+}

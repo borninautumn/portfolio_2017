@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+}
+body {
+	margin: 0;
+	background-color: #fff;
+    min-width: 900px;
+}
+
+div, header, footer, section, nav, aside, article {
+	position: relative;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+}
+
+
+/*
+scroll
+*/
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(0, 0, 0, 0.2);
+}

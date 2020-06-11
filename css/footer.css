@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer {
+	height: 100px;
+	background-color: #363239;
+}
+
+footer address {
+	color: white;
+	font-size: 15px;
+	margin-left: 100px;
+	line-height: 100px;
+}
+
+footer .btn-top {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0; left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+footer .btn-top img {
+	opacity: 0.4;
+}
+
+footer .btn-top img:hover {
+	opacity: 1;
+}

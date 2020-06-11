@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 80px;
+    z-index: 999;
+    /*
+    background-color: rgba(0, 0, 0, .1);
+    */
+}
+
+header inner {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .logo, header .hambuger {
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+    cursor: pointer;
+    /*
+    background-color: rgba(0, 0, 0, .1);
+    */
+}
+
+header .logo {
+	float: left;
+}
+header .logo img {
+	width: 100%;
+}
+
+header .hambuger {
+	float: right;
+    border-radius: 50%;
+    
+    background-color: rgba(0, 0, 0, .1);
+}
+.bar {
+	position: absolute;
+	width: 50%;
+	height: 2px;
+	background-color: #000;
+	top: 50%; left: 50%;
+	transition: all 0.4s;
+}
+.first {
+	transform: translate(-50%, -500%);
+}
+.second {
+	transform: translate(-50%, -50%);
+}
+.third {
+	transform: translate(-50%, 500%);
+}
+.slash {
+	width: 90%;
+	transform: translate(-50%, -50%) rotate(-225deg);
+}
+.hidden {
+	opacity: 0;
+}
+.backslash {
+	width: 90%;
+	transform: translate(-50%, -50%) rotate(225deg);
+}
+
+/*
+svg {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+}
+svg circle{
+	transition: r 1s;
+}
+*/

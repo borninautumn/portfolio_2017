@@ -1,0 +1,138 @@
+section.contact {
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-image: url(../img/contact_bg.png);
+	background-position: center;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+    
+    color: #262525;
+    font-size: 16px;
+}
+
+section.contact-on {
+	opacity: 1;
+}
+
+section.contact .contact-inner {
+	width: 1200px;
+	height: 300px;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 997;
+}
+
+section.contact .ct-inner .title {
+	font-size: 30px;
+	color: black;
+}
+
+.contact-inner .ask-wrap, .contact-inner .answer-wrap {
+	margin-top: 50px;
+	float: left;
+}
+
+.contact-inner .ask-wrap .ask {
+	font-weight: 600;
+}
+
+.contact-inner .answer-wrap .answer {
+	margin-left: 40px;
+	font-weight: 500;
+}
+
+.contact-inner .ask, .contact-inner .answer {
+    margin-bottom: 15px;
+}
+
+.contact-inner .answer.sns-wrap .sns {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.contact-inner .sns-wrap .sns .image img {
+	width: 100%;
+}
+.sns-wrap .sns:last-child {
+	cursor: default;
+}
+.sns-wrap .sns .text {
+	position: absolute;
+	top: 5px; left: 35px;
+}
+
+/*
+contact bg cloud
+*/
+section.contact .ctcloud-wrap {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+section.contact .ctcloud {
+	position: absolute;
+}
+
+.ctcloud:first-child {
+	top: 100px; right: 0;
+	animation: cloudoneAni ease-out 60s infinite;
+}
+
+.ctcloud:nth-child(2) {
+	top: 0; right: 0;
+	animation: cloudtwoAni ease-out 70s infinite;
+}
+
+.ctcloud:nth-child(3) {
+	top: 185px; right: 0;
+	animation: cloudthreeAni ease-out 70s infinite;
+}
+
+@keyframes cloudoneAni {
+	0% {
+		right: -5%;
+	}
+	100% {
+		right: 110%;
+	}
+}
+
+@keyframes cloudtwoAni {
+	0% {
+		right: -25%;
+	}
+	100% {
+		right: 110%;
+	}
+}
+
+@keyframes cloudthreeAni {
+	0% {
+		right: -45%;
+	}
+	100% {
+		right: 110%;
+	}
+}
+
+/*
+contact bg car
+*/
+.contact .car {
+	position: absolute;
+	bottom: 20px;
+	animation: carAni 8s ease-in-out infinite;
+}
+
+@keyframes carAni {
+	0% {
+		left: -10%;
+	}
+	100% {
+		left: 110%;
+	}
+}

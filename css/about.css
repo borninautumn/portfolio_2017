@@ -1,0 +1,421 @@
+
+section.about {
+	height: 800px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+section.about-on {
+	opacity: 1;
+}
+
+section.about .about-inner {
+	width: 1200px;
+	height: 600px;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section.about .about-inner .title {
+	font-size: 30px;
+	color: #88dc67;
+	margin-top: 30px;
+	
+}
+
+section.about .about-inner .text {
+	font-size: 16px;
+	color: #626161;
+	margin-top: 25px;
+}
+
+section.about .about-inner .text span {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*
+about skills
+*/
+section.about .about-inner .pie-wrap {
+	width: 700px;
+	height: 250px;
+	position: absolute;
+	top: 45%; left: 0;
+}
+
+.about-inner .pie-wrap p {
+	font-size: 24px;
+}
+
+.about-inner .pie-wrap .pie {
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-right: 15px;
+	margin-top: 50px;
+}
+
+.about-inner .pie-wrap .pie:last-child {
+	margin-right: 0;
+}
+
+.pie:before {
+    content: '';
+    position: absolute;
+    top: 0px; left: 0px;
+    right: 0; bottom: 0;
+    border: 20px solid #89dc67;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    clip: rect(auto, 60px, auto, auto);
+    transition: transform 1s linear;
+}
+
+.pie.rotate:before {
+    transform: rotate(180deg);
+}
+
+.pie .cover {
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%; bottom: 0;
+    background-color: #fff;
+}
+
+.pie .deg {
+    position: absolute;
+    top: 0px; left: 0px;
+    right: 0; bottom: 0;
+    border: 20px solid #89dc67;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    clip: rect(auto, 60px, auto, auto);
+    transition-property : transform;
+    transition-timing-function: linear;
+}
+
+.pie .score {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    z-index: 999;
+}
+
+.pie .score:after {
+    content: '%';
+}
+
+section.about .subject-wrap {
+    width: 650px;
+    display: inline-block;
+}
+
+section.about .subject-wrap .subject {
+    float: left;
+    padding: 10px 10px;
+}
+
+section.about .subject-wrap .subject:nth-child(1) {
+    margin-left: 10px;
+}
+
+section.about .subject-wrap .subject:nth-child(2) {
+    margin-left: 40px;
+}
+
+section.about .subject-wrap .subject:nth-child(3) {
+    margin-left: 55px;
+}
+
+section.about .subject-wrap .subject:nth-child(4) {
+    margin-left: 72px;
+}
+
+section.about .subject-wrap .subject:nth-child(5) {
+    margin-left: 75px;
+}
+
+/*
+about licence
+*/
+section.about .about-inner .licence-wrap {
+	width: 350px;
+	height: 250px;
+	position: absolute;
+	top: 45%; right: 100px;
+}
+
+section.about .about-inner .licence-wrap .title {
+	font-size: 20px;
+	margin-top: 70px;
+}
+
+section.about .about-inner .licence-wrap .licence {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 16px;
+	margin-top: 25px;
+}
+
+.about-inner .licence-wrap .licence:last-child {
+	margin-right: 0;
+}
+
+section.about .licence-wrap .subject {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*
+about line
+*/
+section.about .about-inner .line {
+	width: 1200px;
+	border-bottom: 1px solid #ccc;
+}
+
+/*
+about bg bird
+*/
+.abird-wrap {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.abird {
+	position: absolute;
+	width: 22px;
+	height: 4px;
+}
+
+/*
+about bird 1
+*/
+.abird:nth-child(1) {
+	top: 100px; left: 200px;
+	animation: AbirdAni1 6s alternate infinite;
+}
+
+.abird:nth-child(1):before {
+	content: '';
+	width: 11px; height: 4px;
+	background-image: url(../img/bird1.png);
+	position: absolute;
+	transform: left bottom;
+	animation: AbirdAni2 0.6s infinite alternate;
+}
+
+.abird:nth-child(1):after {
+	content: '';
+	width: 11px; height: 4px;
+	left: 10px;
+	background-image: url(../img/bird2.png);
+	position: absolute;
+	transform: right bottom;
+	animation: AbirdAni3 0.6s infinite alternate;
+	opacity: 0.5;
+}
+
+@keyframes AbirdAni1 {
+	0% {
+		top: 100px;
+		margin-left: 0;
+	}
+	100% {
+		top: 150px;
+		margin-left: 100px;
+	}
+}
+
+@keyframes AbirdAni2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes AbirdAni3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+
+/*
+about bird 2
+*/
+.abird:nth-child(2) {
+	top: 240px; right: 250px;
+	animation: AbirdAni4 6s alternate infinite;
+}
+
+.abird:nth-child(2):before {
+	content: '';
+	width: 11px; height: 4px;
+	background-image: url(../img/bird1.png);
+	position: absolute;
+	transform: left bottom;
+	animation: AbirdAni2 0.6s infinite alternate;
+}
+
+.abird:nth-child(2):after {
+	content: '';
+	width: 11px; height: 4px;
+	left: 10px;
+	background-image: url(../img/bird2.png);
+	position: absolute;
+	transform: right bottom;
+	animation: AbirdAni3 0.6s infinite alternate;
+	opacity: 0.5;
+}
+
+@keyframes AbirdAni4 {
+	0% {
+		top: 240px;
+		margin-right: 0;
+	}
+	100% {
+		top: 290px;
+		margin-right: 100px;
+	}
+}
+
+@keyframes AbirdAni2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes AbirdAni3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+
+/*
+about bird 3
+*/
+.abird:nth-child(3) {
+	bottom: 100px; right: 350px;
+	animation: AbirdAni5 6s alternate infinite;
+}
+
+.abird:nth-child(3):before {
+	content: '';
+	width: 11px; height: 4px;
+	background-image: url(../img/bird1.png);
+	position: absolute;
+	transform: left bottom;
+	animation: AbirdAni2 0.6s infinite alternate;
+}
+
+.abird:nth-child(3):after {
+	content: '';
+	width: 11px; height: 4px;
+	left: 10px;
+	background-image: url(../img/bird2.png);
+	position: absolute;
+	transform: right bottom;
+	animation: AbirdAni3 0.6s infinite alternate;
+	opacity: 0.5;
+}
+
+@keyframes AbirdAni5 {
+	0% {
+		bottom: 100px;
+		margin-right: 0;
+	}
+	100% {
+		bottom: 200px;
+		margin-right: 100px;
+	}
+}
+
+@keyframes AbirdAni2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes AbirdAni3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+
+/*
+about bird 4
+*/
+.abird:nth-child(4) {
+	bottom: 50px; left: 200px;
+	animation: AbirdAni6 6s alternate infinite;
+}
+
+.abird:nth-child(4):before {
+	content: '';
+	width: 11px; height: 4px;
+	background-image: url(../img/bird1.png);
+	position: absolute;
+	transform: left bottom;
+	animation: AbirdAni2 0.6s infinite alternate;
+}
+
+.abird:nth-child(4):after {
+	content: '';
+	width: 11px; height: 4px;
+	left: 10px;
+	background-image: url(../img/bird2.png);
+	position: absolute;
+	transform: right bottom;
+	animation: AbirdAni3 0.6s infinite alternate;
+	opacity: 0.5;
+}
+
+@keyframes AbirdAni6 {
+	0% {
+		bottom: 50px;
+		margin-left: 0;
+	}
+	100% {
+		bottom: 100px;
+		margin-left: 100px;
+	}
+}
+
+@keyframes AbirdAni2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes AbirdAni3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
